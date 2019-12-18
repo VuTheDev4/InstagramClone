@@ -9,23 +9,23 @@
 /* Begin PBXBuildFile section */
 		EAFDDD2023A9E1E400DF4010 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFDDD1F23A9E1E400DF4010 /* AppDelegate.swift */; };
 		EAFDDD2223A9E1E400DF4010 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFDDD2123A9E1E400DF4010 /* SceneDelegate.swift */; };
-		EAFDDD2423A9E1E400DF4010 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFDDD2323A9E1E400DF4010 /* ViewController.swift */; };
 		EAFDDD2723A9E1E400DF4010 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAFDDD2523A9E1E400DF4010 /* Main.storyboard */; };
 		EAFDDD2923A9E1E600DF4010 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAFDDD2823A9E1E600DF4010 /* Assets.xcassets */; };
 		EAFDDD2C23A9E1E600DF4010 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAFDDD2A23A9E1E600DF4010 /* LaunchScreen.storyboard */; };
 		EAFDDD3723A9E24A00DF4010 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFDDD3623A9E24A00DF4010 /* LoginVC.swift */; };
+		EAFDDD3C23AA890400DF4010 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFDDD3B23AA890400DF4010 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EAFDDD1C23A9E1E400DF4010 /* InstagramClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAFDDD1F23A9E1E400DF4010 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAFDDD2123A9E1E400DF4010 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EAFDDD2323A9E1E400DF4010 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EAFDDD2623A9E1E400DF4010 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EAFDDD2823A9E1E600DF4010 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAFDDD2B23A9E1E600DF4010 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EAFDDD2D23A9E1E600DF4010 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EAFDDD3623A9E24A00DF4010 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		EAFDDD3B23AA890400DF4010 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,12 +58,12 @@
 		EAFDDD1E23A9E1E400DF4010 /* InstagramClone */ = {
 			isa = PBXGroup;
 			children = (
+				EAFDDD3A23AA887B00DF4010 /* Utils */,
 				EAFDDD3523A9E20300DF4010 /* Model */,
 				EAFDDD3423A9E1FF00DF4010 /* View */,
 				EAFDDD3323A9E1FA00DF4010 /* Controller */,
 				EAFDDD1F23A9E1E400DF4010 /* AppDelegate.swift */,
 				EAFDDD2123A9E1E400DF4010 /* SceneDelegate.swift */,
-				EAFDDD2323A9E1E400DF4010 /* ViewController.swift */,
 				EAFDDD2523A9E1E400DF4010 /* Main.storyboard */,
 				EAFDDD2823A9E1E600DF4010 /* Assets.xcassets */,
 				EAFDDD2A23A9E1E600DF4010 /* LaunchScreen.storyboard */,
@@ -92,6 +92,14 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		EAFDDD3A23AA887B00DF4010 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EAFDDD3B23AA890400DF4010 /* Extensions.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,10 +173,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAFDDD2423A9E1E400DF4010 /* ViewController.swift in Sources */,
 				EAFDDD2023A9E1E400DF4010 /* AppDelegate.swift in Sources */,
 				EAFDDD3723A9E24A00DF4010 /* LoginVC.swift in Sources */,
 				EAFDDD2223A9E1E400DF4010 /* SceneDelegate.swift in Sources */,
+				EAFDDD3C23AA890400DF4010 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
