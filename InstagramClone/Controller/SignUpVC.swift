@@ -173,7 +173,7 @@ class SignUpVC: UIViewController, UIImagePickerControllerDelegate, UINavigationC
 
                let filename = NSUUID().uuidString
 
-               // UPDATE: - In order to get download URL must add filename to storage ref like this
+               
                let storageRef = Storage.storage().reference().child("profile_images").child(filename)
 
                storageRef.putData(uploadData, metadata: nil, completion: { (metadata, error) in
@@ -184,7 +184,7 @@ class SignUpVC: UIViewController, UIImagePickerControllerDelegate, UINavigationC
                        return
                    }
 
-                   // UPDATE: - Firebase 5 must now retrieve download url
+                   
                    storageRef.downloadURL(completion: { (downloadURL, error) in
                        guard let profileImageUrl = downloadURL?.absoluteString else {
                            print("DEBUG: Profile image url is nil")
@@ -204,6 +204,10 @@ class SignUpVC: UIViewController, UIImagePickerControllerDelegate, UINavigationC
 
                        // save user info to database
                        USER_REF.updateChildValues(values, withCompletionBlock: { (error, ref) in
+                        
+                        if let error = error {
+                            print("Error with Value:", error.localizedDescription)
+                        }
 
 //                           guard let mainTabVC = UIApplication.shared.keyWindow?.rootViewController as? MainTabVC else { return }
 //

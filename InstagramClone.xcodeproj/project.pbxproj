@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		63D56B5DAC98D8FC65E5F192 /* Pods_InstagramClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0BCA455DBF38B0C00A11C2D /* Pods_InstagramClone.framework */; };
+		EA45A6CB23BA646F0043B075 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA45A6CA23BA646F0043B075 /* GoogleService-Info.plist */; };
 		EAFDDD2023A9E1E400DF4010 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFDDD1F23A9E1E400DF4010 /* AppDelegate.swift */; };
 		EAFDDD2223A9E1E400DF4010 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFDDD2123A9E1E400DF4010 /* SceneDelegate.swift */; };
 		EAFDDD2723A9E1E400DF4010 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAFDDD2523A9E1E400DF4010 /* Main.storyboard */; };
@@ -16,13 +17,13 @@
 		EAFDDD3723A9E24A00DF4010 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFDDD3623A9E24A00DF4010 /* LoginVC.swift */; };
 		EAFDDD3C23AA890400DF4010 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFDDD3B23AA890400DF4010 /* Extensions.swift */; };
 		EAFDDD3E23B10ED900DF4010 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFDDD3D23B10ED900DF4010 /* SignUpVC.swift */; };
-		EAFDDD4723B7C12800DF4010 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EAFDDD4623B7C12800DF4010 /* GoogleService-Info.plist */; };
 		EAFDDD4923B7C4BD00DF4010 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFDDD4823B7C4BD00DF4010 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A82F7D1D07EB2AF86AE2197B /* Pods-InstagramClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramClone.release.xcconfig"; path = "Pods/Target Support Files/Pods-InstagramClone/Pods-InstagramClone.release.xcconfig"; sourceTree = "<group>"; };
 		B0BCA455DBF38B0C00A11C2D /* Pods_InstagramClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstagramClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA45A6CA23BA646F0043B075 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EAFDDD1C23A9E1E400DF4010 /* InstagramClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAFDDD1F23A9E1E400DF4010 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAFDDD2123A9E1E400DF4010 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,7 +34,6 @@
 		EAFDDD3623A9E24A00DF4010 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		EAFDDD3B23AA890400DF4010 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		EAFDDD3D23B10ED900DF4010 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
-		EAFDDD4623B7C12800DF4010 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EAFDDD4823B7C4BD00DF4010 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F6978B690D988A4ECB418DB7 /* Pods-InstagramClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramClone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InstagramClone/Pods-InstagramClone.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,8 +98,8 @@
 				EAFDDD2523A9E1E400DF4010 /* Main.storyboard */,
 				EAFDDD2823A9E1E600DF4010 /* Assets.xcassets */,
 				EAFDDD2A23A9E1E600DF4010 /* LaunchScreen.storyboard */,
+				EA45A6CA23BA646F0043B075 /* GoogleService-Info.plist */,
 				EAFDDD2D23A9E1E600DF4010 /* Info.plist */,
-				EAFDDD4623B7C12800DF4010 /* GoogleService-Info.plist */,
 			);
 			path = InstagramClone;
 			sourceTree = "<group>";
@@ -204,7 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAFDDD2C23A9E1E600DF4010 /* LaunchScreen.storyboard in Resources */,
-				EAFDDD4723B7C12800DF4010 /* GoogleService-Info.plist in Resources */,
+				EA45A6CB23BA646F0043B075 /* GoogleService-Info.plist in Resources */,
 				EAFDDD2923A9E1E600DF4010 /* Assets.xcassets in Resources */,
 				EAFDDD2723A9E1E400DF4010 /* Main.storyboard in Resources */,
 			);
@@ -238,23 +238,15 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-InstagramClone/Pods-InstagramClone-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/Protobuf/protobuf.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/protobuf.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
